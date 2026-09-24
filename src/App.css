@@ -1,85 +1,191 @@
-/* body{
+
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Geostar&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alien+Block&family=Geostar&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Press+Start+2P&display=swap');
+body{
+  background-color:#f4efe7;
   margin: 0;
-  font-family: sans-serif;
-  background-color: #ffff
 }
-.paralogin{
-  color: black;
-  background-color: white;
+
+
+.yellowthing{
+  width: 100vw;
+  background-color: #EDAB18;
+  height: 70vh;
+  border-radius:0 0 40% 40%;
+
+}
+
+.navabar{
+  position: fixed;
+  top: 0;
+  width: 95%;
+  z-index: 10;
+}
+
+nav ul{
+  font-family: "Alien Block";
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between
+}
+.pp{
+  font-size: 3em;
+}
+.marquee{
+  width: 20%;
+  height: 40%;
+  background-image: url("./Screenshot\ 2026-09-23\ 133801.png");
+  color:#f4efe7;
+  position: relative;
+  top: 40%;
+  left: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  font-family: "Press Start 2P";
+  font-size: 1.5em;
+  border-radius: 30px;
+  min-width: 200px;
+
+}
+
+.sections{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.section1{
+  width: 20%;
+  height: 35vh;
+  background-color: #fffff0;
   padding: 20px;
-  border: 20px;
-  justify-content: right;
-  align-items: left
+  margin: 100px 0 100px 0;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items:center;  
+  overflow: hidden
+}
 
+.sections img{
+  width: 80%;
+  border-radius: 20px;
+  padding: 0 0 20px 0;
 }
-.inputdiv{
-  padding: 0 20px 20px 20px;
-  border: 5px;
-  width: 200px;
-}
-.password_box{
-  height: 62px;
-  width: 60vw;
-  padding: 0px 0 0 0;
-  border: 10px;
-  margin: 5px;
-  border-radius: 15px;
-  color: white;
-  background-color: white;
-  border: 1px solid rgb(161, 161, 161);
 
-}
-.password_box::placeholder{
-  padding: 10px 10px 10px 20px;
-  font-size: 1.2rem;
-}
-.password_box:focus{
-  border: 1.2px solid black;
-}
-.password_box:hover{
-  border: 1.2px solid black
-}
-.loginbtn{
-  width: 60vw;
-  height: 52px;
-  padding: 5px;
+.getstarted{
+  width: 30%;
+  height: 8vh;
+  border-radius: 10px;
   border: none;
-  margin: 15px 0 0 0;
+  background-color: black;
   color: white;
-  background-color: rgb(23, 23, 219);
-  border-radius: 50px;
-  font-size: 1.2rem;
-  
+  font-size: 1em;
+  min-width: 200px;
 }
-.hihi{
-  color: black;
-  font: bold;
+.btnn{
+  display: grid;
+  place-items: center;
+  margin: 100px;
 }
-
-.createnewbtn{
-   width: 60vw;
-  height: 52px;
-  padding: 5px;
-  margin: 15px 0 0 0;
-  color:  rgb(23, 23, 219);
-  background-color: white;
-  border-radius: 50px;
-  font-size: 1.2rem;
-  border: 1px solid rgb(23, 23, 219);
-
-
-
+footer{
+  display: grid;
+  place-items: center;
 }
-.createnewbtn:hover{
-  background-color: rgb(236, 232, 232);
+.contact{
+  width: 100%;
+  height: 8vh;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 1em;
 }
 
-.logo{
-  height: 120px;
-  margin: 20px 0 10px 0;
+button:hover{
+  background-color: rgb(108, 108, 189);
+  transition: 0.3s ease;
 }
 
+.sections img:hover{
+  width: 85%;
+  transition: 0.3s ease
+}
+
+@media (max-width: 500px){
+  .marquee{
+    left: 90px;
+  }
+  .video{
+    height: 100vh;
+  }
+}
+
+.video{
+  background-color: #EDAB18;
+  width: 100vw;
+  height: 70vh;
+}
+.acvid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.videobox{
+  width: 300px;
+  height: 300px;
+}
+
+.videobox video{
+  width: 100%;
+  height: 100%;
+}
+
+.new{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+hr{
+  width: 90%;
+  border: none;
+  border-top: 2px solid rgba(200, 194, 194, 0.736);
+  margin: 35px auto;
+}
+
+a{
+  text-decoration: none;
+}
+h2{
+  font-family: "Alien Block";
+  font-size: 2em;
+}
+.mail{
+  color:#f4efe7;
+}
+.mail:hover{
+  transition: 1s ease;
+  color: rgba(131, 131, 241, 0.78);
 
 
-
- */
+}
+.intro{
+  text-align: center;
+  max-width: 600px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+}
+.intro h2{
+  font-family: "Alien Block";
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.intro p{
+  font-size: 1.1em;
+  line-height: 1.5;
+}
